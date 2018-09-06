@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Vehicles
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <span ion-item *ngFor="let vehicle of vehicles">
+      <h1>{{ vehicle.name }}</h1>
+      <h2>{{ vehicle.model }}</h2>
+      <h2>{{ vehicle.vehicle_class }}</h2>
+    </span>  
+  </ion-list>
+</ion-content>

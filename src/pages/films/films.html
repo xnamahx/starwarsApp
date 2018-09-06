@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Films</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let film of films" (click)="presentCharactersModal(film.characters)">
+      <h1>{{ film.title }}</h1>
+      <h2>{{ film.release_date }}</h2>
+      <p>
+      {{ film.opening_crawl }}
+      </p>
+    </button>  
+  </ion-list>
+</ion-content>
