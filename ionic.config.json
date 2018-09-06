@@ -1,0 +1,7 @@
+{
+  "name": "swApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
