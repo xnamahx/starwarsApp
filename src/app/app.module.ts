@@ -1,7 +1,9 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { Firebase } from '@ionic-native/firebase';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { Dialogs } from '@ionic-native/dialogs';
 import { MyApp } from './app.component';
 
 import { VehiclesPage } from '../pages/vehicles/vehicles';
@@ -38,8 +40,10 @@ import { FilmServiceProvider } from '../providers/film-service/film-service';
     TabsPage
   ],
   providers: [
+    Firebase,
     StatusBar,
     SplashScreen,
+    Dialogs,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     FilmServiceProvider
   ]

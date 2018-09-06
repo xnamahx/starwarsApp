@@ -11,7 +11,6 @@ import { Injectable } from '@angular/core';
 export class FilmServiceProvider {
 
   constructor(public http: HttpClient) {
-    console.log('Hello FilmServiceProvider Provider');
   }
 
   getFilms() {
