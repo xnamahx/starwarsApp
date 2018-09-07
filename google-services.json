@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "782165050802",
+    "firebase_url": "https://swapp-c8689.firebaseio.com",
+    "project_id": "swapp-c8689",
+    "storage_bucket": "swapp-c8689.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782165050802:android:c68aafd8326cacc7",
+        "android_client_info": {
+          "package_name": "com.swapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782165050802-fnj2fftmnvmk33pq2jvb94jikoc4l1j7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmu7YtNiBC5tZcW-80axJlo0S8JmS80T4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
