@@ -86,3 +86,18 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+.list-item{
+	display:flex;
+}
+
+.list-item small{
+	min-width: 40px !important;
+}
+
+.list-item > h2:first-of-type{
+	min-width: 150px !important;
+}
+
+$toolbar-background:rgb(153, 204, 255);

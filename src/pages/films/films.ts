@@ -10,7 +10,7 @@ import { CharactersPage } from '../films/characters';
 
 export class FilmsPage {
 
-  films: Array<{title: string, release_date: string, opening_crawl: string}> = [];
+  filmsOrdered: Array<{title: string, release_date: string, opening_crawl: string}> = [];
 
   constructor(
   	public navCtrl: NavController,
@@ -26,7 +26,23 @@ export class FilmsPage {
   ionViewDidLoad(){
 	  this.filmService.getFilms().subscribe(
 	      (data) => { // Success
-	        this.films = data['results'];
+	        let films = data['results'];
+
+          //simple order function
+          this.filmsOrdered = films.sort(function(a, b){
+              let aProperty = parseInt(a['release_date'].slice(0,4));
+              let bProperty = parseInt(b['release_date'].slice(0,4));
+              if(aProperty < bProperty){
+                  return -1;
+              }
+              else if( aProperty > bProperty){
+                  return 1;
+              }
+              else{
+                  return 0;
+              }
+          });
+          
 	      },
 	      (error) =>{
 	        console.error(error);

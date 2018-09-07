@@ -1,14 +1,14 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Films</ion-title>
+    <ion-title>Films in the Star Wars franchise</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-list>
-    <button ion-item *ngFor="let film of films" (click)="presentCharactersModal(film.characters)">
-      <h1>{{ film.title }}</h1>
-      <h2>{{ film.release_date }}</h2>
+    <button ion-item *ngFor="let film of filmsOrdered" (click)="presentCharactersModal(film.characters)">
+      <h1>{{ film.title }} ({{ film.release_date.slice(0,4) }})</h1>
+      <h2></h2>
       <p>
       {{ film.opening_crawl }}
       </p>
